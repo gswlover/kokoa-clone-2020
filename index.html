@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Kokoa Clone</title>
@@ -16,24 +17,22 @@
         </div>
         <div class="status-bar__column">
             <span>110%</span>
-            <i class="fas fa-battery-full"></i>
+            <i class="fas fa-battery-full fa-lg"></i>
             <i class="fas fa-bolt"></i>
         </div>
+
     </div>
     <header class="Welcome-header">
         <h1 class="Welcome-header__title">Welcome to Kokoa Clone</h1>
-        <p class="Welcome-header__text">If you have a Kokoa Account,log in with your email or phone number.</p>
-
+        <p class="Welcome-header__text">If you have a Kokoa Account, log in with your email or phone number.</p>
     </header>
-
     <form id="login-form">
-        <input type="text" placeholder="Email or Phone number">
+        <input type="text" placeholder="Email or phone humber">
         <input type="password" placeholder="Password">
         <input type="submit" value="Log in"/>
         <a href="#">Find Kokoa Account or Password</a>
-    </form>
 
-    
+    </form>
     <script src="https://kit.fontawesome.com/03738d0403.js" crossorigin="anonymous">
     </script>
 </body>
@@ -43,7 +42,11 @@
 
 
 <!--css는 특징적인 이름이 필요하다-->
-<!--id 와 class 를 구분해서 쓰기-->
+<!--id 와 class 를 구분해서 쓰기
+class=""~
+id="" ~ 이름 달기 css편의를 위해-->
+<!--script 는 꼭 body 전-->
+<!--<h1> , <p>-->
 <!--alt and click 같이 써짐-->
 <!--placeholder 속성은 미리 데이터를 입력
 value와의 차이점은 value는 안지워지고
@@ -51,3 +54,7 @@ placeholder는 지워짐-->
 <!--input type="text" placeholder="아이디를 입력하세요.">-->
 <!--button or input-->
 <!--link 는 a=href~-->
+
+<!--link:css 숏커트 ! css/style.css-->
+<!--fontawesome 에서 가져온 아이콘의 크기를 바꿀 수 있다. 
+ex: fa-2x. fa-xl, fa-lg...-->
