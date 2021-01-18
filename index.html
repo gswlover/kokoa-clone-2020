@@ -25,12 +25,15 @@
         <h1 class="Welcome-header__title">Welcome To Kokoa Clone</h1>
         <p class="Welcome-header__text">If you have a Kokoa Account, log in with your email or phone number.</p>
      </header>
-     <form id="login-form">
-        <input type="text" placeholder="Email or phone number">
-        <input type="password" placeholder="Password">
-        <input type="submit" value="Log in"/>
+     <form action="friends.html" method="get" id="login-form">
+        <input name="username"  type="text" placeholder="Email or phone number">
+        <input name="password"  type="password" placeholder="Password">
+        <input type="submit" value="Log In"/>
         <a href="#">Find Kokoa Account or Password</a>
     </form>
+    <div id="no-mobile">
+        <span>Your screen is too biggg<img src="file:///Users/aeleepark/Desktop/bigg-cutout.png"></span>
+    </div>
     <script src="https://kit.fontawesome.com/03738d0403.js" crossorigin="anonymous">
     </script>
 </body>
@@ -55,3 +58,7 @@ placeholder는 지워짐-->
 <!--link:css 숏커트 ! css/style.css-->
 <!--fontawesome 에서 가져온 아이콘의 크기를 바꿀 수 있다. 
 ex: fa-2x. fa-xl, fa-lg...-->
+<!--type="submit" attribute selector-->
+
+<!--form에는 두가지 1. action 2. method:(1)POST:백앤드서버에 전송 (2) GET:보안에 취약,url에 포함되어도
+상관없는 정보들을 GET방식  -->

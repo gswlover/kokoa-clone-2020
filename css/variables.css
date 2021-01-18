@@ -1,3 +1,9 @@
 :root {
   --yellow: #fae100;
+  --horizontal-space: 25px;
+  --main-border: 1px solid rgba(0, 0, 0, 0.1);
+  --find-friends: rgba(0, 0, 0, 0.5);
 }
+
+/*변수: 수식에 따라서 변하는 값
+미리 정리히는 게 좋음 https://www.youtube.com/watch?v=67stn7Pu7s4 참고*/

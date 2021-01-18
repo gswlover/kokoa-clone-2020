@@ -1,42 +1,58 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
-
-@import "reset.css";
-@import "variables.css";
-
-/*Components*/
-@import "components/status-bar.css";
-@import "components/nav-bar.css";
-@import "components/screen-header.css";
-@import "components/user-component.css";
-@import "components/badge.css";
-@import "components/icon-row.css";
-@import "components/alt-screen-header.css";
-@import "components/no-mobile.css";
-
-
-
-/*screens*/
-@import "screens/login.css";
-@import "screens/friends.css";
-@import "screens/find.css";
-@import "screens/more.css";
-@import "screens/settings.css";
-@import "screens/chats.css";
-
-
-body {
-  color: #2e363e;
-  font-family: "Poppins", sans-serif;
-    
+.Welcome-header {
+  margin: 90px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Welcome-header__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+.Welcome-header__text {
+  width: 60%;
+  opacity: 0.7;
+}
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+#login-form input {
+  border: none;
+  padding: 15px 0px;
+  font-size: 18px;
+  margin-bottom: 25px;
 }
 
-.main-screen {
-  padding: 0px var(--horizontal-space)
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
 }
 
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
 
+#login-form input:focus {
+  border-color: var(--yellow);
+}
 
-/*status bar--*/
+#login-form input[type="submit"] {
+  cursor: pointer;
+  padding: 22px 0px;
+  border-radius: 5px;
+}
+#login-form input:hover[type="submit"] {
+  background-color: var(--yellow);
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+}
 
 /*나열하려면 display: flex;*/
 /*양쪽 width 안맞춰지지만  양쪽 정렬 :justify-content: space-between;
@@ -59,8 +75,4 @@ body {
 미리 정리히는 게 좋음 https://www.youtube.com/watch?v=67stn7Pu7s4 참고*/
 /*inherit은 a가 color를 login-from(아버지)로부터 받는것
 default 를 없애주기위함==전부 black(아버지) 이기 때문에 black 으로 돌려짐*/
-/*.login-form__input{} / .login-form__btn{}/.login-form__a{}
-섞어서 쓰는것보다 class사용을 더 추천*/
-
-
-/*노마드 스타일: styles.css 파일은 1. font-family /2. background color
+/*.login-form__input{} / .login-form__btn{}/.login-form__a{}*/

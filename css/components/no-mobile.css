@@ -1,0 +1,47 @@
+#no-mobile {
+  position: fixed;
+  z-index: 99;
+  height: 100vh;
+  background-color: #c2f91c;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  top: 0;
+}
+
+@media screen and (max-width: 500px) {
+  #no-mobile {
+    display: none;
+  }
+}
+
+@keyframes nombileanimation {
+  0% {
+    color: rgb(255, 230, 0);
+    transform: none;
+  }
+  50% {
+    color: rgb(8, 84, 247);
+    transform: scale(1.1);
+  }
+  100% {
+    color: rgb(255, 230, 0);
+    transform: none;
+  }
+}
+
+#no-mobile span {
+  animation: nombileanimation 0.9s linear infinite;
+  font-weight: 600;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+}
+
+#no-mobile img {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
+}
